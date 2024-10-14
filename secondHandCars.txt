@@ -1,10 +1,10 @@
 
 Nome tabella: CARS
 
-id                  BIGINT                 PRIMARY_KEY AUTO_INCREMENT NOT_NULL
+id                  BIGINT                 PRIMARY_KEY  AUTO_INCREMENT    NOT_NULL
 brand               VARCHAR(255)           NOT_NULL
 model               VARCHAR(255)           NOT_NULL
-vin                 TINYINT                NOT_NULL     UNIQUE
+vin                 VARCHAR(255)           NOT_NULL     UNIQUE
 year                YEAR                   NOT_NULL
 power_supply        VARCHAR(255)           NOT_NULL
 engine              TINYINT                NOT_NULL
@@ -15,6 +15,6 @@ number_of_km        MEDIUMINT              NOT_NULL
 optional            BOOLEAN                NOT_NULL     DEFAULT(false)
 status              VARCHAR(255)           NULL
 overhaul            BOOLEAN                NOT_NULL     DEFAULT(true)
-price               FLOAT(7,2)             NOT_NULL
+price               DECIMAL(7,2)             NOT_NULL
 discount            BOOLEAN                NULL         DEFAULT(false)
 available           BOOLEAN                NOT_NULL     DEFAULT(true)
